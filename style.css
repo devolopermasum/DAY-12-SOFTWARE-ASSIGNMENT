@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.full-website{
+    width: 1024px;
+    margin: auto;
+}
+/* ==========MENU CSS START========== */
+.header-section {
+	background-color: black;
+}
+.header-section ul{
+    text-align: center;
+}
+.header-section ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-section ul li a {
+	display: inline-block;
+	color: #c9b7b7;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 50px 25px;
+}
+.header-section li:hover a {
+    color: white;
+}
+/* ==========MENU CSS END========== */
+/* ==========DROPDOWN MENU CSS START========== */
+.header-section ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: black;
+    width: 300px;
+    border-top: 5px solid blue;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header-section ul li ul li{
+    display: block;
+}
+.header-section ul li ul li a {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+	padding: 15px;
+}
+.header-section ul li ul li:hover > a {
+    background-color: blue;
+    font-size: 20px;
+    padding-left: 2px;
+}
+.header-section ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+/* ==========DROPDOWN MENU CSS END========== */
+/* =====SECEND DROPDOWN MENT CSS START===== */
+.header-section ul li ul li{
+    position: relative;
+}
+.header-section ul li ul li .dropdown{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: black;
+
+    transition: .3s;
+    opacity: 0;
+    visibility: 0;
+}
+
+.header-section ul li ul li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-section ul li ul li ul li{
+    display: block;
+}
+.header-section ul li ul li ul li a{
+    display: block;
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+	padding: 15px;
+}
+.header-section ul li ul li ul li a:hover{
+    font-size: 20px;
+}
+/* =====SECEND DROPDOWN MENT CSS END===== */
+/* ======BANNER SECTION CSS START======= */
+.banner-section{
+    background: url(https://i.ibb.co/tP57tSW/young-mens.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0px;
+}
+.banner-section h1{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.banner-section h2 {
+	background-color: #fff;
+	color: black;
+	padding: 5px;
+	width: 950px;
+	margin: auto;
+}
+.banner-section a{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding:10px 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .3s;
+}
+.banner-section a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+}
+/* ======BANNER SECTION CSS END======= */
+/* ======OUTSIDE SECTION CSS START======= */
+.outside-section{
+    margin: 15px 0px 70px 0px;
+    border:2px solid rgba(0, 0, 0, 0.111) ;
+    font-family: sans-serif;
+}
+.outside-section h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-siaze: 35px;
+	margin-bottom: 10px;
+    font-weight: 300;
+}
+.outside-section li{
+    margin-bottom: 10px;
+    text-align: center;
+    list-style-position:outside;
+}
+/* ======OUTSIDE SECTION CSS END======= */
+/* ======INDIDE SECTION CSS START======= */
+.inside-section {
+	box-shadow: 0px 0px 10px 10px rgb(248, 248, 244);
+	margin: 15px 0px 70px 0px;
+	list-style-position: inside;
+	font-family: sans-serif;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.inside-section h1 {
+	margin-top: 50px;
+	font-size: 35px;
+	margin-bottom: 10px;
+    font-weight: 300;
+    padding-top: 50px;
+}
+.inside-section li{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding: 0px 10px;
+}
+/* ======INDIDE SECTION CSS END======= */
+/* =========FORM CONTACT CSS START========= */
+.contact-section {
+	background-color: #f2f2f2;
+	padding: 50px;
+}
+.contact-section .form{
+
+}
+.contact-section .form{
+
+}
+.contact-section .form .email {
+	font-size: 21px;
+	padding: 10px;
+	width: 715px;
+	border: 1px solid red;
+    outline: none;
+}
+.contact-section .form .submit {
+	font-size: 22px;
+	color: white;
+	background: red;
+	padding: 10px 20px;
+    margin-left:-5px;
+}
+.contact-section .form .submit:hover{
+    color:black;
+    background-color: #fff;
+    border: 1px solid red;
+}
+/* =========FORM CONTACT CSS END========= */
+/* ========LIST-STYLE-TYPE SECTION START======== */
+.style-type-section {
+	border: 4px dotted #00000017;
+	text-align: center;
+	padding-bottom: 75px;
+    font-family: sans-serif;
+}
+.style-type-section h1 {
+	font-size: 35px;
+	margin-top: 50px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.style-type-section .type1 {
+	list-style-type: lower-roman;
+	display: inline-block;
+	font-size: 15px;
+	width: 30%;
+	line-height: 30px;
+    margin-left: 5px;
+}
+.style-type-section .type2{
+    list-style-type:square;
+    display: inline-block;
+    font-size: 15px;
+	width: 30%;
+	line-height: 30px;
+}
+.style-type-section .type3{
+    list-style-type:lower-greek;
+    display: inline-block;
+    font-size: 15px;
+	width: 30%;
+	line-height: 30px;
+}
+/* ========LIST-STYLE-TYPE SECTION END======== */
+/* ==========FOOTER SECTION CSS START============ */
+.footer-section{
+    background-color: black;
+    padding: 20px 0px 50px 0px;
+}
+.footer-section h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.footer-section ul{
+    text-align: center;
+}
+.footer-section ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.footer-section ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.footer-section ul li a:hover{}
+/* ==========FOOTER SECTION CSS END============ */
